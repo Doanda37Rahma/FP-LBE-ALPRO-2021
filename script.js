@@ -47,12 +47,27 @@ colors = [
     dark: "#29648a",
     light: "#2e9cca",
   },
+  {
+    id: 4,
+    black: "#35174d",
+    white: "#fefefe",
+    gray: "#f3effe",
+    dark: "#6f36bb",
+    light: "#ff4878",
+  },
+  {
+    id: 5,
+    black: "#141850",
+    white: "#fae5df",
+    gray: "#f5cac2",
+    dark: "#303179",
+    light: "#ed7966",
+  },
 ]
 
 
 var prevScheme = 0;
 colorToggle.addEventListener("click", function() {
-  // console.log(rand);
   let rand = getRand(colors.length);
   if (prevScheme === rand) rand = getRand(colors.length);
   let colorScheme = colors[rand];
